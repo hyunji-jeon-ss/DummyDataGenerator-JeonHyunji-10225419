@@ -1,0 +1,33 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DummyDataGeneratorLib", "DummyDataGeneratorLib\DummyDataGeneratorLib.vcxproj", "{C34C048C-C523-4342-8F64-83E91ABF19F0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DummyDataGeneratorApp", "DummyDataGeneratorApp\DummyDataGeneratorApp.vcxproj", "{9834C985-A89E-43CF-8D1D-C7378C8A30DF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DummyDataGeneratorTest", "DummyDataGeneratorTest\DummyDataGeneratorTest.vcxproj", "{A6A2770F-81E2-4BBC-AF76-9A129D6E57D5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C34C048C-C523-4342-8F64-83E91ABF19F0}.Debug|x64.ActiveCfg = Debug|x64
+		{C34C048C-C523-4342-8F64-83E91ABF19F0}.Debug|x64.Build.0 = Debug|x64
+		{C34C048C-C523-4342-8F64-83E91ABF19F0}.Release|x64.ActiveCfg = Release|x64
+		{C34C048C-C523-4342-8F64-83E91ABF19F0}.Release|x64.Build.0 = Release|x64
+		{9834C985-A89E-43CF-8D1D-C7378C8A30DF}.Debug|x64.ActiveCfg = Debug|x64
+		{9834C985-A89E-43CF-8D1D-C7378C8A30DF}.Debug|x64.Build.0 = Debug|x64
+		{9834C985-A89E-43CF-8D1D-C7378C8A30DF}.Release|x64.ActiveCfg = Release|x64
+		{9834C985-A89E-43CF-8D1D-C7378C8A30DF}.Release|x64.Build.0 = Release|x64
+		{A6A2770F-81E2-4BBC-AF76-9A129D6E57D5}.Debug|x64.ActiveCfg = Debug|x64
+		{A6A2770F-81E2-4BBC-AF76-9A129D6E57D5}.Debug|x64.Build.0 = Debug|x64
+		{A6A2770F-81E2-4BBC-AF76-9A129D6E57D5}.Release|x64.ActiveCfg = Release|x64
+		{A6A2770F-81E2-4BBC-AF76-9A129D6E57D5}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
