@@ -5,10 +5,18 @@ Dummy 데이터 생성 Tool PoC. 테스트용 더미 시료/주문 데이터를 
 
 ## 기술 스택 / 컨벤션
 - C++20, Visual Studio(MSBuild, .vcxproj), gmock(NuGet)
+- nlohmann/json (NuGet 패키지 `nlohmann.json`) — JSON 저장소 연동
 - 코드 컨벤션은 상위 `Semiconductor` 폴더의 `CODE_CONVENTION.md`를 따른다.
 
+## 구조
+```
+DummyDataGeneratorLib/    # model/, repository/(IItemRepository, JsonItemRepository — save/findAll만), generator/(DummyItemGenerator)
+DummyDataGeneratorApp/    # 콘솔 실행 파일 (main.cpp), Lib 참조
+DummyDataGeneratorTest/   # gmock 단위 테스트 (MockItemRepository로 생성 로직 검증), Lib 참조
+```
+
 ## 설계 방향
-- 랜덤/시드 기반으로 더미 데이터를 생성
+- 시드 기반으로 더미 데이터를 생성 (동일 시드 → 동일 이름 시퀀스, 재현 가능)
 - 생성 후 실제 저장소(Repository)에 삽입까지 수행
 - 생성 결과는 `DataMonitor` PoC로 확인 가능해야 함
 
